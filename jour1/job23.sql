@@ -1,1 +1,1 @@
-SELECT MAX(age) FROM etudiants;
+SELECT * FROM etudiants ORDER BY age DESC LIMIT 1;

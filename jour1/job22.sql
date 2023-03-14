@@ -1,1 +1,1 @@
-SELECT MIN(age) FROM etudiants;
+SELECT * FROM etudiants ORDER BY age ASC LIMIT 1;
