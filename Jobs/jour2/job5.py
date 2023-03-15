@@ -18,4 +18,6 @@ selectionAction = ("SELECT SUM(superficie) FROM etage")
 cursorSel.execute(selectionAction)
 req = cursorSel.fetchone()
 
-print("La superficie de la Plateforme est de ",req , " m2")
+print(f"La superficie de la Plateforme est de {req[0]} m2")
+
+cursorSel.close()

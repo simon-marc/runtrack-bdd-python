@@ -16,6 +16,8 @@ cursorSel = cnx.cursor()
 selectionAction = ("SELECT SUM(capacite) FROM salle")
 
 cursorSel.execute(selectionAction)
-req = cursorSel.fetchone()
+req = cursorSel.fetchall()
 
-print("La capacité de toutes les salles est de ",req , " personnes")
+print(f"La capacité de toutes les salles est de {req[0][0]} personnes")
+
+cursorSel.close()
